@@ -37,7 +37,7 @@ class Food {
     self.dishName = getDishName(for: imageURL)
   }
   
-  func getDishName(for dishURLString: String) -> String {
+  private func getDishName(for dishURLString: String) -> String {
     let stringComponents = dishURLString.components(separatedBy: "/")
     return stringComponents[4]
   }
